@@ -174,6 +174,7 @@ class _TravelDetailsState extends State<TravelDetails> {
                         'notes': _notes,
                       });
 
+                      // ignore: use_build_context_synchronously
                       Navigator.pop(context);
                     },
                     child: const Text('Add Note'),
@@ -220,6 +221,8 @@ class _TravelDetailsState extends State<TravelDetails> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 150, 182, 197),
+         iconTheme:
+            const IconThemeData(color: Color.fromARGB(255, 238, 224, 201)),
         title: Text(
           widget.travel,
           style: const TextStyle(
